@@ -10,7 +10,7 @@
 
 
 .login-container {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $bg-main-color;
     display: flex;
     flex-direction: row;

@@ -7,7 +7,7 @@
 }
 
 .login-container {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #201b2c;
   display: flex;
   flex-direction: row;
