@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.login-container {
+  height: 100vh;
+  background-color: #201b2c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.login-container .left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container .left-login h1 {
+  color: #77ffc0;
+  font-size: 3vw;
+}
+.login-container .left-login img {
+  width: 35vw;
+}
+.login-container .right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container .right-login .card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background-color: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.337254902);
+}
+.login-container .right-login .card-login h1 {
+  color: #00ff88;
+  font-weight: 800;
+}
+.login-container .right-login .card-login .textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.login-container .right-login .card-login .textfield input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #514869;
+  color: rgba(240, 255, 255, 0.8705882353);
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.337254902);
+}
+.login-container .right-login .card-login .textfield input::placeholder {
+  color: rgba(240, 255, 255, 0.5803921569);
+}
+.login-container .right-login .card-login .textfield input:focus {
+  outline: none;
+}
+.login-container .right-login .card-login .textfield label {
+  color: rgba(240, 255, 255, 0.8705882353);
+  margin-bottom: 10px;
+}
+.login-container .right-login .card-login .btn-login {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background-color: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px rgba(0, 255, 128, 0.3215686275);
+}
+
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login-container {
+    flex-direction: column !important;
+  }
+  .right-login {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .left-login {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .left-login > h1 {
+    display: none !important;
+  }
+  .left-login > img {
+    width: 50vw !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
